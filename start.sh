@@ -9,8 +9,8 @@ mkdir -p /opt/alist/data/
 cat >/opt/alist/data/config.json <<EOF
 {
   "address": "0.0.0.0",
-  "port": 2233,
-  "assets": "local",
+  "port": 5244,
+  "assets": "https://npm.elemecdn.com/alist-web@$version/dist",
   "database": {
     "type": "$DB_TYPE",
     "user": "$DB_USER",
