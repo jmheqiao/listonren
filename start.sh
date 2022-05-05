@@ -12,12 +12,12 @@ cat >/opt/alist/data/config.json <<EOF
   "port": 2233,
   "assets": "local",
   "database": {
-    "type": "$DATABASE",
-    "user": "$SQLUSER",
+    "type": "$DB_TYPE",
+    "user": "$DB_USER",
     "password": "$SQLPASSWORD",
-    "host": "$SQLHOST",
-    "port": $SQLPORT,
-    "name": "$SQLNAME",
+    "host": "$DB_HOST",
+    "port": $DB_PORT,
+    "name": "$DB_NAME",
     "table_prefix": "x_",
     "db_file": "data.db"
   },
