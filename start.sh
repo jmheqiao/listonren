@@ -10,7 +10,7 @@ cat >/opt/alist/data/config.json <<EOF
 {
   "address": "0.0.0.0",
   "port": 5244,
-  "assets": "https://npm.elemecdn.com/alist-web@$version/dist",
+  "assets": "local",
   "database": {
     "type": "$DB_TYPE",
     "user": "$DB_USER",
