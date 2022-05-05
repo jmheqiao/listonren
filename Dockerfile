@@ -7,7 +7,7 @@ EXPOSE 5244
 # ENTRYPOINT [ "./alist", "-docker" ]
 
 RUN chmod +x /opt/alist/alist
-RUN /opt/alist/alsit
+RUN /opt/alist/alist
 
 ADD start.sh /start.sh
 RUN chmod +x /start.sh
