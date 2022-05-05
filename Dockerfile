@@ -4,7 +4,12 @@ WORKDIR /opt/alist/
 
 EXPOSE 5244
 
-ENTRYPOINT [ "./alist", "-docker" ]
+# ENTRYPOINT [ "./alist", "-docker" ]
 
 RUN chmod +x /opt/alist
-./opt/alist -conf data/config.json
+RUN /opt/alist -conf data/config.json
+
+ADD start.sh /start.sh
+RUN chmod +x /start.sh
+
+CMD /start.sh
